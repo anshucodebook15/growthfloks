@@ -1,0 +1,118 @@
+.about{
+    // border: 1px solid red;
+    margin: 10rem 0;
+
+    &_main{
+
+        &--detail{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // border: 1px solid red;
+
+            &-text{
+                width: 47%;
+                // border: 1px solid red;
+
+                p{
+                padding-bottom: $base-padding-l;
+                }
+
+                .about-btn{
+                        @include basic_btn($btn-col, $abt-bck-btn-col, 0, $btn-bor-rad);
+                }
+            }
+
+            &-show{
+                width: 49%;
+                // border: 1px solid red;
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+
+                .show_item{
+                    width: 17rem;
+                    height: 11rem;
+                    position: relative;
+                    background-color: #FAFCFC;
+                    border-radius: 2px;
+                    margin: .6rem;
+
+                    &--head{
+                        width: 80%;
+                        // border: 1px solid red;
+                        text-align: center;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+
+                        &-num{
+                            font-family: 'Big Shoulders Display', cursive;
+                            font-size: $abt-num-font-size ;
+                            font-weight: $abt-num-font-weight ;
+                            color: $abt-num-color;
+                            margin-bottom: $base-margin-s;
+                        }
+
+                        &-cap{
+
+                            font-family: 'Lato', sans-serif;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 1.4rem;
+
+                        }
+
+                        .span-item{
+                            display: block;
+                            // border: 1px solid red;
+                            width:100%;
+                            
+                        }
+                     }
+
+
+
+
+                }
+
+            }
+
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 900px){
+
+    .about{
+
+        margin-top: 5rem;
+
+        &_main{
+
+            &--detail{
+                flex-direction: column;
+                justify-content: space-between;
+                height: 63rem;
+                
+
+                &-text{
+                    width: 100%;
+                    text-align: center;
+                    
+                    // margin-bottom: $base-margin-l;
+                }
+
+                &-show{
+                    width: 100%;
+                    
+                }
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,158 @@
+.hero{
+    min-height: $hero-sec-main-h;
+    // border: 1px solid red;
+
+    &_back{
+        background: #FAFCFC;
+        min-height: 55rem;
+    }
+    
+
+    &_main{
+        display: flex;
+        justify-content: space-around;
+        height: $hero-sec-h;
+        
+
+        &--heading{
+            position: relative;
+            width: 48%;
+            // border: 1px solid blue;
+            
+
+            .d-box-r{
+                width: 17.2rem;
+                height: 7.2rem;
+                background-color: #FFB468;
+                border-radius: 2px;
+                position: absolute;
+                top: 8.8rem;
+            }
+
+            .heading-box{
+                // border: 1px solid red;
+                position: absolute;
+                top: 12.1rem;
+                left: 2.6rem;
+            
+                // @mixin font_style_lato($f-size, $f-weight, $l-height, $f-col )
+
+                &-h1{
+                    @include font_style_big_shoulder($hero-sec-h1-font-size, $hero-sec-h1-font-weight, $hero-sec-h1-line-h, $hero-sec-h1-col);
+                    word-spacing: .3rem;
+                }
+
+                &-p{
+                    @include font_style_lato($hero-sec-p-font-size, $hero-sec-p-font-weight, $hero-sec-p-line-h, $hero-sec-p-col);
+                    letter-spacing: 0.01em;
+                }
+
+                &-btn{
+                    @include basic_btn($btn-col, $btn-bck-col, $btn-bor-col, $btn-bor-rad);
+                }
+
+        }
+        }
+
+        &--img{
+            width: 48%;
+            position: relative;
+            // border: 1px solid blue;
+
+            .d-box-l-1{
+                width: 8rem ;
+                height: 13.6rem;
+                background-color: #EB655E;
+                border-radius: 2px;
+                position: absolute;
+                top: 5.3rem;
+            }
+
+            .hero_img-box{
+                width: 46.4rem ;
+                height: 55rem;
+                border-radius: 2px;
+                background-color: rgb(170, 41, 41);
+                z-index: 1;
+                position: absolute;
+                top: 8.8rem;
+                left: 4.8rem;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .d-box-l-2{
+                width: 13.6rem ;
+                height: 13.6rem;
+                background-color: #FFB468;;
+                border-radius: 2px;
+                position: absolute;
+                top: 46rem;
+                left: 42rem;
+            }
+        }
+
+
+    }
+
+}
+
+@media only screen and (max-width: 900px){
+
+    .hero{
+
+        &_back{
+            min-height: 40rem;
+        }
+
+        &_main{
+            flex-direction: column;
+            justify-content: start;
+            height: 120rem;
+
+            &--heading{
+                width: 100%;
+                height: 49rem;
+
+                .d-box-r{
+                    top: 6rem;
+                    left: 6rem;
+                }
+
+                .heading-box{
+                    top: 9.5rem;
+                    left: 2.6rem;
+                    text-align: center;
+                }
+            }
+
+            &--img{
+                width: 100%;
+                height: 70rem;
+
+                .d-box-l-1{
+                    top: 3rem;
+                }
+
+                .hero_img-box{
+                    width: 37rem ;
+                    height: 47rem;
+                    top: 7rem;
+                    left: 2.5rem;
+                }
+
+                .d-box-l-2{
+                    width: 9rem ;
+                    height: 13.6rem;
+                    top: 43rem;
+                    left: 33rem;
+                }
+            }
+        }
+    }
+    
+
+}
