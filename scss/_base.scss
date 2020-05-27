@@ -11,9 +11,39 @@ html{
     font-size: 62.5%;   // 10px = 1rem
 }
 
-// Footer
+// Logo
 
-.footer{
+.logo{
+    width: 16rem;
+    // padding-left: 2rem;
+}
 
-    
+.newsletter-box{
+    margin-top: 1.7rem;    
+    background-color: #fff;
+    padding: .5rem;
+    border-radius: 2px;
+
+
+    .newsletter-inp{
+        border: none;
+        padding: .8rem;
+        width: 58%;
+        border-radius: 2px;
+        
+    }
+
+    .newsletter-btn{
+        box-sizing: border-box;
+        cursor: pointer;
+        width: 38%;
+        border: none;
+        // border: .3rem solid #fff;
+        padding: 1rem;
+        border-radius: 2px;
+        background-color: #35CCB0;
+        font-size: 1.6rem;
+        color: #FFFFFF;
+    }
+
 }
