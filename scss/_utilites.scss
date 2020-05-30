@@ -5,6 +5,12 @@
     // border: 1px solid red;
 }
 
+.division-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 .bottom_bar{
     margin-top: 2.5rem;
@@ -51,4 +57,23 @@
 
 
 
+}
+
+
+.ser_item-img{
+    width: 6rem;
+    margin-bottom: $base-margin-m;
+}
+
+.ser_item-h{
+    font-size: 2rem;
+    margin-bottom: $base-margin-m;
+    color: #494F4E;;
+}
+
+.ser_item-para{
+    font-size: 1.6rem;
+    margin-bottom: $base-margin-m;
+    color: #444D4B;;
+    
 }

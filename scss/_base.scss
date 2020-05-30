@@ -18,6 +18,8 @@ html{
     // padding-left: 2rem;
 }
 
+
+// NewsLetter Box
 .newsletter-box{
     margin-top: 1.7rem;    
     background-color: #fff;
@@ -46,4 +48,92 @@ html{
         color: #FFFFFF;
     }
 
+}
+
+
+// Herobar
+.herobar{
+    // border: 1px solid red;
+    
+    &_main{
+        position: relative;
+        height: 13rem;
+        // border: 1px solid blue;
+        background-color: #E0E0E0;
+
+        h1{
+            position: absolute;
+            top: 38%;
+            font-size: 4rem;
+            font-family: 'Lato', sans-serif;
+            padding-left: 2rem;
+            font-weight: 300;
+        }
+
+    }
+}
+
+// 
+@media only screen and (max-width: 700px){
+
+    .herobar{
+        // border: 1px solid red;
+        
+        &_main{
+            height: 10rem;
+        
+            h1{
+               
+                font-size: 3rem;
+    
+            }
+    
+        }
+    }
+
+}
+
+
+//main Heading
+.main_heading{
+    margin: 5rem 0rem;
+}
+
+
+// Banner
+
+.banner{
+    background-color: #EFF2F2;
+    height: 12rem;
+    margin-bottom: 20rem;
+   
+    &_main{
+        
+        padding: 2rem 3rem;
+        height: 20rem;
+        border-radius: 5px;
+        background-color: #DAD7FF;
+
+        h2{
+            @include font_style_big_shoulder($title-font-size-m, $title-font-weight-m, $title-font-line-h, $title-font-col-m);
+            margin-bottom: $base-margin-s;
+        }
+
+        p{
+            font-size: 1.7rem;
+        }
+
+        .btn{
+            padding: 1rem 1.5rem;
+            background: #8D87CD;
+            border: none;
+            color: rgb(247, 247, 247);
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            cursor: pointer;
+        }
+
+
+
+    }
 }
