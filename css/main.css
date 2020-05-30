@@ -599,6 +599,47 @@ body {
   width: 100%;
 }
 
+.about_calender {
+  min-height: 32rem;
+  background-color: #FAFCFC;
+}
+
+.about_calender_head {
+  font-size: 1.4rem;
+  padding-top: 6rem;
+  text-align: center;
+}
+
+.about_calender_main {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about_calender_main--left {
+  width: 8%;
+  text-align: right;
+}
+
+.about_calender_main--mid {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about_calender_main--mid .item {
+  width: 15rem;
+  height: 12rem;
+  border-radius: .2rem;
+  background-color: #EFF2F2;
+}
+
+.about_calender_main--right {
+  width: 8%;
+}
+
 @media only screen and (max-width: 900px) {
   .about_main--detail {
     flex-direction: column;
@@ -1114,7 +1155,7 @@ body {
   color: #A4AAA9;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 700px) {
   .footer_main--head {
     flex-direction: column;
   }
@@ -1243,6 +1284,225 @@ body {
     width: 98%;
     text-align: center;
     margin: 2rem 0;
+  }
+}
+
+.blog_post--events {
+  margin: 5rem 0;
+  width: 99%;
+}
+
+.blog_post--events-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog_post--events-item .item-img-box {
+  width: 39%;
+}
+
+.blog_post--events-item .item-img-box .item-img {
+  width: 100%;
+}
+
+.blog_post--events-item .item-content {
+  width: 57%;
+}
+
+.blog_post--events-item .item-content-h2 {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #26423D;
+  margin-bottom: 1.5rem;
+}
+
+.blog_post--events-item .item-content-data {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blog_post--events-item .item-content-data .data-set {
+  line-height: 1.8;
+  width: 30%;
+  margin-bottom: 1.6rem;
+}
+
+.blog_post--events-item .item-content-data .data-set span {
+  color: #EB655E;
+  font-size: 1.4rem;
+}
+
+.blog_post--events-item .item-content-btn .btn {
+  background: #35CCB0;
+  border: none;
+  border-radius: 2px;
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .blog_post--events-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog_post--events-item .item-img-box {
+    width: 90%;
+  }
+  .blog_post--events-item .item-img-box .item-img {
+    width: 100%;
+  }
+  .blog_post--events-item .item-content {
+    width: 90%;
+    text-align: center;
+  }
+  .blog_post--events-item .item-content-h2 {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #26423D;
+    margin: 1.5rem;
+    text-align: center;
+  }
+  .blog_post--events-item .item-content-data {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .blog_post--events-item .item-content-data .data-set {
+    line-height: 1.8;
+    width: 30%;
+    margin-bottom: 1.6rem;
+  }
+  .blog_post--events-item .item-content-data .data-set span {
+    color: #EB655E;
+    font-size: 1.4rem;
+  }
+  .blog_post--events-item .item-content-btn .btn {
+    background: #35CCB0;
+    border: none;
+    border-radius: 2px;
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.contact {
+  min-height: 50rem;
+}
+
+.contact_main {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact_main--content {
+  width: 47%;
+}
+
+.contact_main--content p {
+  color: #2E3332;
+}
+
+.contact_main--content .list--item {
+  display: flex;
+  align-items: center;
+}
+
+.contact_main--content .list--item-dashed {
+  width: 4rem;
+  background-color: #5A6361;
+  height: .4rem;
+  border-radius: 2px;
+  margin-right: 2rem;
+}
+
+.contact_main--content .list--item p {
+  display: inline-block;
+  padding-top: 1.8rem;
+}
+
+.contact_main--form {
+  border: 1px solid red;
+  width: 45%;
+  background: #FAFCFC;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+.contact_main--form .tag {
+  padding: 1.5rem 1.5rem 0rem 1.5rem;
+}
+
+.contact_main--form .tag label {
+  display: block;
+  font-size: 1.4rem;
+  color: #7A8281;
+  margin-bottom: 1rem;
+}
+
+.contact_main--form .tag input, .contact_main--form .tag select, .contact_main--form .tag textarea {
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 2px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.contact_main--form .tag .btn {
+  background: #35CCB0;
+  border: none;
+  border-radius: 2px;
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.contact_main--form .email {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact_main--form .email .tag-1 {
+  width: 59%;
+}
+
+.contact_main--form .email .tag-2 {
+  width: 39%;
+}
+
+@media only screen and (max-width: 700px) {
+  .contact_main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact_main--content {
+    width: 90%;
+  }
+  .contact_main--form {
+    width: 90%;
+    margin-top: 3rem;
+  }
+  .contact_main--form .email {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact_main--form .email .tag-1 {
+    width: 59%;
+  }
+  .contact_main--form .email .tag-2 {
+    width: 39%;
   }
 }
 /*# sourceMappingURL=main.css.map */
